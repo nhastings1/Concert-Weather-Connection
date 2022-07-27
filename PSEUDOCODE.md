@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Elevator pitch: A one-minute description of your application:
 
 
@@ -36,7 +35,8 @@ functions etc]
 
 thurs 21 - initial conception [all]
 mon 25 - finalize ideas [all]
-outside class tues- [molly html w/ help on slack // ? sorry on readme]
+outside class tues- [molly html w/ help on slack from [all]// nick on readme]
+tues 26 - rough draft html & css [all]
 
 
 Challenges - 
