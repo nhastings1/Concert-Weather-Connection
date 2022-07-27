@@ -1,10 +1,9 @@
 head, body {
     margin-bottom: auto;
+    background-attachment: fixed;
 	background-image: url("/concertbgnfrontpage.jpeg");
-	background-size: cover;
-	width: 99%;
-    min-height: 360px;
-    display: table;
+    background-size: cover;
+    overflow-y: hidden;
 }
 
 .form {
@@ -12,4 +11,37 @@ head, body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+    padding: 10px;
+    margin-bottom: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .jumbotron { grid-area: 1 / 1 / 2 / 7; }
+    .form { grid-area: 3 / 3 / 4 / 5; }
+    .venueList { grid-area: 5 / 1 / 9 / 3; }
+    .concertSched { grid-area: 5 / 3 / 7 / 7; }
+    .weatherSched { grid-area: 7 / 3 / 9 / 7; }
+
+.jumbotron {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.40);
+    font-size: 27px;
+}
+
+.jumbotron p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.venueList {
+    
 }
