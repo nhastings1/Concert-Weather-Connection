@@ -1,7 +1,7 @@
 head, body {
     margin-bottom: auto;
     background-attachment: fixed;
-	background-image: url("/concertbgnfrontpage.jpeg");
+	background-image: url("../../concertbgnfrontpage.jpeg");
     background-size: cover;
     overflow-y: hidden;
 }
@@ -44,4 +44,12 @@ head, body {
 
 .venueList {
     
+}
+
+#venueBtn {
+    font-size: 95%;
+}
+
+#cityBtn {
+    font-size: 97%;
 }
