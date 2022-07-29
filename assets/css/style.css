@@ -1,7 +1,8 @@
-head, body {
+head,
+body {
     margin-bottom: auto;
     background-attachment: fixed;
-	background-image: url("../../concertbgnfrontpage.jpeg");
+    background-image: url("../../imgs/concertbgnfrontpage.jpeg");
     background-size: cover;
     overflow-y: hidden;
 }
@@ -24,13 +25,27 @@ head, body {
     grid-template-rows: repeat(9, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
-    
-    .jumbotron { grid-area: 1 / 1 / 2 / 7; }
-    .form { grid-area: 3 / 3 / 4 / 5; }
-    .venueList { grid-area: 5 / 1 / 9 / 3; }
-    .concertSched { grid-area: 5 / 3 / 7 / 7; }
-    .weatherSched { grid-area: 7 / 3 / 9 / 7; }
+}
+
+.jumbotron {
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+.form {
+    grid-area: 3 / 3 / 4 / 5;
+}
+
+.venueList {
+    grid-area: 5 / 1 / 9 / 3;
+}
+
+.concertSched {
+    grid-area: 5 / 3 / 7 / 7;
+}
+
+.weatherSched {
+    grid-area: 7 / 3 / 9 / 7;
+}
 
 .jumbotron {
     text-align: center;
@@ -43,9 +58,7 @@ head, body {
     font-weight: bold;
 }
 
-.venueList {
-    
-}
+.venueList {}
 
 #venueBtn {
     font-size: 95%;
