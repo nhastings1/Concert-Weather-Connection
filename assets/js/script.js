@@ -27,4 +27,4 @@ var searchVenue = ('#searchVenue');
 
 moment();
 
-function
+function ()

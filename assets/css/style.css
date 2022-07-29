@@ -2,11 +2,7 @@ head,
 body {
     margin-bottom: auto;
     background-attachment: fixed;
-<<<<<<< HEAD
-	background-image: url("../../imgs/concertbgnfrontpage.jpeg");
-=======
     background-image: url("../../imgs/concertbgnfrontpage.jpeg");
->>>>>>> 71ebbbd6887215d360387573938f1a7376e4a5d6
     background-size: cover;
     overflow-y: hidden;
 }
