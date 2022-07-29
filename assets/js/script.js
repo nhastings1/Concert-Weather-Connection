@@ -4,27 +4,40 @@
 // if they search by city then we might need geo location?
 // add .moment so time can meet location person is at
 
-
-// 1 when they search for city, use api call to seach city, append to page, possibly add 5 venues to the side
+// 1 when they search for city, use api call to search city, append to page, possibly add 5 venues to the side
 
 //Grabs the current time and date
-var date = moment().format(‘dddd, MMMM Do YYYY’);
-var dateTime = moment().format(‘YYYY - MM - DD HH: MM: SS’)
+var date = moment().format("MMMM Do YYYY");
+var dateTime = moment().format("MMMM Do YYYY, h:mm a");
 
-var cityResponse = ('#cityBtn');
+var cityResponse = $("#cityBtn");
 
-var venueResponse = ('#venueBtn');
+var $venueBtn = $("#venueBtn");
 
-var venueList = ('.venueList');
+var venueList = $(".venueList");
 
-var concertSched = ('.concertSched');
+var concertSched = $(".concertSched");
 
-var weatherSched = ('.weatherSched');
+var weatherSched = $(".weatherSched");
 
-var searchCity = ('#searchCity');
+var searchCity = $("#searchCity");
 
-var searchVenue = ('#searchVenue');
+var $searchVenue = $("#searchVenue");
 
 moment();
 
-function ()
+$venueBtn.on("click", function (event) {
+  event.preventDefault();
+  console.log($(this));
+  var venue = $searchVenue.val().trim();
+    console.log(venue);
+  var queryURL =
+    "https://api.seatgeek.com/2/events?client_id=MjgxMTM0Nzd8MTY1OTA2NDcyMC44ODExNTg4&q="  + venue;
+
+  $.ajax({
+    url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+  });
+});
