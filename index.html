@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 
-    <title>Concert ClimaGuide</title>
+  <title>Concert ClimaGuide</title>
 
 </head>
 
@@ -34,7 +34,7 @@
           <div class="medium-6 cell">
             <label>
               <input id="searchCity" type="text" placeholder="">
-              <button class="submit button" id="cityBtn" > Search by City </button>
+              <button class="submit button" id="cityBtn"> Search by City </button>
             </label>
           </div>
           <div class="medium-6 cell">
@@ -48,24 +48,169 @@
     </form>
 
     <div class="eventList">
-     
+
+      <div class="card" id="cardEventList" style="width: 300px;">
+        <div class="card-divider">
+
+        </div>
+
+        <div class="card-section">
+          <ul style="list-style-type: none;">
+            <li>
+              <!-- add class, id to list if needed -->
+            </li>
+          </ul>
+        </div>
+      </div>
+
 
     </div>
+
 
     <div class="concertSched">
 
+      <!-- concert day 1 -->
+
+      <div class="card" id="concert1" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <!-- h2 is adding the date to the card -->
+          <h2></h2>
+          <!-- h3 is adding the time to the card -->
+          <h3></h3>
+          <!-- p is adding url of the concert to seatgeek to card -->
+          <p></p>
+        </div>
+
+      </div>
+
+      <!-- concert day 2 -->
+
+      <div class="card" id="concert2" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <!-- h2 is adding the date to the card -->
+          <h2></h2>
+          <!-- h3 is adding the time to the card -->
+          <h3></h3>
+          <!-- p is adding url of the concert to seatgeek to card -->
+          <p></p>
+        </div>
+
+      </div>
+
+      <!-- concert day 3 -->
+
+      <div class="card" id="concert3" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <!-- h2 is adding the date to the card -->
+          <h2></h2>
+          <!-- h3 is adding the time to the card -->
+          <h3></h3>
+          <!-- p is adding url of the concert to seatgeek to card -->
+          <p></p>
+        </div>
+
+      </div>
+
+      <!-- concert day 4 -->
+      <div class="card" id="concert4" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <!-- h2 is adding the date to the card -->
+          <h2></h2>
+          <!-- h3 is adding the time to the card -->
+          <h3></h3>
+          <!-- p is adding url of the concert to seatgeek to card -->
+          <p></p>
+        </div>
+      </div>
+
+      <!-- concert day 5 -->
+      <div class="card" id="concert5" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <!-- h2 is adding the date to the card -->
+          <h2></h2>
+          <!-- h3 is adding the time to the card -->
+          <h3></h3>
+          <!-- p is adding url of the concert to seatgeek to card -->
+          <p></p>
+        </div>
+      </div>
+
     </div>
+
+
 
     <div class="weatherSched">
 
+      <!-- day 1 weather -->
+      <div class="card" id="weather1" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <p id="temp1"></p>
+          <p id="windspeed1"></p>
+          <p id="humidity1"></p>
+        </div>
+      </div>
+
+      <!-- day 2 weather -->
+      <div class="card" id="weather2" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <p id="temp2"></p>
+          <p id="windspeed2"></p>
+          <p id="humidity2"></p>
+        </div>
+      </div>
+
+      <!-- day 3 weather -->
+      <div class="card" id="weather3" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <p id="temp3"></p>
+          <p id="windspeed3"></p>
+          <p id="humidity3"></p>
+        </div>
+      </div>
+
+      <!-- day 4 weather -->
+      <div class="card" id="weather4" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <p id="temp4"></p>
+          <p id="windspeed4"></p>
+          <p id="humidity4"></p>
+        </div>
+      </div>
+
+      <!-- day 5 weather -->
+      <div class="card" id="weather5" style="width: 300px;">
+        <div class="card-divider">
+        </div>
+        <div class="card-section">
+          <p id="temp5"></p>
+          <p id="windspeed5"></p>
+          <p id="humidity5"></p>
+        </div>
+      </div>
+
+
     </div>
 
-
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  
-  <script src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
