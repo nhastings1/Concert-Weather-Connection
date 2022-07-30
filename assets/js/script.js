@@ -10,7 +10,7 @@
 var date = moment().format("MMMM Do YYYY");
 var dateTime = moment().format("MMMM Do YYYY, h:mm a");
 
-var cityResponse = $("#cityBtn");
+var $cityBtn = $("#cityBtn");
 
 var $venueBtn = $("#venueBtn");
 
@@ -20,7 +20,7 @@ var concertSched = $(".concertSched");
 
 var weatherSched = $(".weatherSched");
 
-var searchCity = $("#searchCity");
+var $searchCity = $("#searchCity");
 
 var $searchVenue = $("#searchVenue");
 
@@ -36,6 +36,21 @@ $venueBtn.on("click", function (event) {
 
   $.ajax({
     url: queryURL,
+    method: "GET",
+  }).then(function (response) {
+    console.log(response);
+  });
+});
+
+$cityBtn.on("click", function (event) {
+  event.preventDefault();
+  console.log($(this));
+  var city = $searchCity.val().trim();
+  console.log(city);
+  var queryURLTwo = "https://api.seatgeek.com/2/events?client_id=MjgxMTM0Nzd8MTY1OTA2NDcyMC44ODExNTg4&q="  + city;
+
+  $.ajax({
+    url: queryURLTwo,
     method: "GET",
   }).then(function (response) {
     console.log(response);
