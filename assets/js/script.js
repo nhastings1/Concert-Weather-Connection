@@ -8,7 +8,7 @@ var $cityBtn = $("#cityBtn");
 
 var $venueBtn = $("#venueBtn");
 
-var venueList = $(".venueList");
+var eventList = $(".eventList");
 
 var concertSched = $(".concertSched");
 
@@ -17,6 +17,8 @@ var weatherSched = $(".weatherSched");
 var $searchCity = $("#searchCity");
 
 var $searchVenue = $("#searchVenue");
+
+var $notAvailable = $("#eventNA");
 
 
 // Calls the current date
@@ -30,7 +32,7 @@ $venueBtn.on("click", function (event) {
   var venue = $searchVenue.val().trim();
     console.log(venue);
   var queryURL =
-    "https://api.seatgeek.com/2/events?client_id=MjgxMTM0Nzd8MTY1OTA2NDcyMC44ODExNTg4&q="  + venue;
+    "https://api.seatgeek.com/2/events?per_page=5&client_id=MjgxMTM0Nzd8MTY1OTA2NDcyMC44ODExNTg4&q="  + venue;
 
   $.ajax({
     url: queryURL,
@@ -46,7 +48,7 @@ $cityBtn.on("click", function (event) {
   console.log($(this));
   var city = $searchCity.val().trim();
   console.log(city);
-  var queryURLTwo = "https://api.seatgeek.com/2/events?client_id=MjgxMTM0Nzd8MTY1OTA2NDcyMC44ODExNTg4&q="  + city;
+  var queryURLTwo = "https://api.seatgeek.com/2/events?per_page=5&client_id=MjgxMTM0Nzd8MTY1OTA2NDcyMC44ODExNTg4&q="  + city;
 
   $.ajax({
     url: queryURLTwo,
@@ -55,3 +57,6 @@ $cityBtn.on("click", function (event) {
     console.log(response);
   });
 });
+
+
+

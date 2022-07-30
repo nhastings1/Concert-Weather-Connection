@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-image: url("../../imgs/concertbgnfrontpage.jpeg");
     background-size: cover;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .form {
@@ -35,7 +35,7 @@ body {
     grid-area: 3 / 3 / 4 / 5;
 }
 
-.venueList {
+.eventList {
     grid-area: 5 / 1 / 9 / 3;
 }
 
