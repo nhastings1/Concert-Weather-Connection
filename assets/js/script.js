@@ -1,15 +1,9 @@
-// local storage
-// use api to use for search buttons
-// call it once for city and once for venue
-// if they search by city then we might need geo location?
-// add .moment so time can meet location person is at
-
-// 1 when they search for city, use api call to search city, append to page, possibly add 5 venues to the side
-
 //Grabs the current time and date
 var date = moment().format("MMMM Do YYYY");
 var dateTime = moment().format("MMMM Do YYYY, h:mm a");
 
+
+// Creates variables for areas and elements on the html page
 var $cityBtn = $("#cityBtn");
 
 var $venueBtn = $("#venueBtn");
@@ -24,8 +18,12 @@ var $searchCity = $("#searchCity");
 
 var $searchVenue = $("#searchVenue");
 
+
+// Calls the current date
 moment();
 
+
+// Creates an api call for venues when users search for a venue and click the venue button
 $venueBtn.on("click", function (event) {
   event.preventDefault();
   console.log($(this));
@@ -42,6 +40,7 @@ $venueBtn.on("click", function (event) {
   });
 });
 
+// Creates an api call for cities when users search for a city and click the city button
 $cityBtn.on("click", function (event) {
   event.preventDefault();
   console.log($(this));
