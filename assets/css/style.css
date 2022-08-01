@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-image: url("../../imgs/concertbgnfrontpage.jpeg");
     background-size: cover;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
 }
 
 .form {
@@ -35,17 +35,9 @@ body {
     grid-area: 3 / 3 / 4 / 5;
 }
 
-.eventList {
-    grid-area: 5 / 1 / 9 / 3;
-}
 
-.concertSched {
-    grid-area: 5 / 3 / 7 / 7;
-}
-
-.weatherSched {
-    grid-area: 7 / 3 / 9 / 7;
-
+.card {
+   position: relative; bottom: 700px;
 }
 
 .jumbotron {
@@ -59,7 +51,6 @@ body {
     font-weight: bold;
 }
 
-.venueList {}
 
 #venueBtn {
     font-size: 95%;

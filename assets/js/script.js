@@ -39,6 +39,8 @@ $venueBtn.on("click", function (event) {
     method: "GET",
   }).then(function (response) {
     console.log(response);
+
+  $(".form").remove();
   
   // appends first day venues data to first card
   $("#concert1").append("<h4>Title:</h4>");

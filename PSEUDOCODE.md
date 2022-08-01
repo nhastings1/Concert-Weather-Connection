@@ -37,6 +37,8 @@ thurs 21 - initial conception [all]
 mon 25 - finalize ideas [all]
 outside class tues- [molly html w/ help on slack from [all]// nick on readme]
 tues 26 - rough draft html & css [all]
+thurs 28 - begin javascript [all]
+sat 30 - continue javascript [all in zoom]
 
 
 Challenges - 
@@ -92,6 +94,7 @@ Then they are presented with venues nearby.
 Tech used: 
 
 Collectively: concept, boilerplate and initial git repo creation, wireframe, testing APIs. Initial challenges were attendance (unforseen circumstances) and a redirect on day two. 
+HTML, CSS FOUNDATION, JS JQUERY, GOOGLE API AJAX
 
 Tasks & roles broken down to: 
 
@@ -103,7 +106,9 @@ functions etc]
 thurs 21 - initial conception [all]
 mon 25 - finalize ideas [all]
 tues 26 - html css skeleton [molly w/ slack help]
- - to-do inclass divy up javascript
+thurs 28 - javascript begun [all in class and after]
+sat 30 - javascript cont [all]
+sun 31 - javascript html css cont (grid realigning for cards) [all]
 
 
 Challenges - 
@@ -120,7 +125,7 @@ Github repo - https://github.com/nhastings1/Ultimate-NFL-Legends
 
 # Notes -
 
-Equal commits - [add names? ask if can] also coordinate with each other
+Equal commits - we have a previous repo to link to show previous commits before we reworked on day 2
 
 # Rough timetable
 
@@ -131,4 +136,3 @@ thurs 28- begin java and divying/teams [determine sat time - post 330]
 sat + emergency sun - continue java? - group zoom (hopefully mostly finished up)
 mon 1 - put a bow on it + create powerpoint & write pitch
 
->>>>>>> 04c81557e7f2a46b594f3bf6916129d5846afa98
