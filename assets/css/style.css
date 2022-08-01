@@ -69,6 +69,13 @@ body {
     font-size: 97%;
 }
 
+#concert1 h4, #concert2 h4, #concert3 h4, #concert4 h4, #concert5 h4 {
+    color:blue;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .form {

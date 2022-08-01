@@ -39,8 +39,49 @@ $venueBtn.on("click", function (event) {
     method: "GET",
   }).then(function (response) {
     console.log(response);
+  
+  // appends first day venues data to first card
+  $("#concert1").append("<h4>Title:</h4>");
+  $("#concert1").append(response.events[0].title,);
+  $("#concert1").append("<h4>Start Time:</h4>");
+  $("#concert1").append(response.events[0].datetime_local);
+  $("#concert1").append("<h4>More Info:</h4>");
+  $("#concert1").append(response.events[0].url);
+
+  // appends second day venues data to second card
+  $("#concert2").append("<h4>Title:</h4>");
+  $("#concert2").append(response.events[1].title,);
+  $("#concert2").append("<h4>Start Time:</h4>");
+  $("#concert2").append(response.events[1].datetime_local);
+  $("#concert2").append("<h4>More Info:</h4>");
+  $("#concert2").append(response.events[1].url);
+
+  // appends third day venues data to third card
+  $("#concert3").append("<h4>Title:</h4>");
+  $("#concert3").append(response.events[2].title,);
+  $("#concert3").append("<h4>Start Time:</h4>");
+  $("#concert3").append(response.events[2].datetime_local);
+  $("#concert3").append("<h4>More Info:</h4>");
+  $("#concert3").append(response.events[2].url);
+
+  // appends fourth day venues data to fourth card
+  $("#concert4").append("<h4>Title:</h4>");
+  $("#concert4").append(response.events[3].title,);
+  $("#concert4").append("<h4>Start Time:</h4>");
+  $("#concert4").append(response.events[3].datetime_local);
+  $("#concert4").append("<h4>More Info:</h4>");
+  $("#concert4").append(response.events[3].url);
+
+  // append fifth day of venues data to fifth card
+  $("#concert5").append("<h4>Title:</h4>");
+  $("#concert5").append(response.events[4].title,);
+  $("#concert5").append("<h4>Start Time:</h4>");
+  $("#concert5").append(response.events[4].datetime_local);
+  $("#concert5").append("<h4>More Info:</h4>");
+  $("#concert5").append(response.events[4].url);
+  
   });
-});
+}); 
 
 // Creates an api call for cities when users search for a city and click the city button
 $cityBtn.on("click", function (event) {
