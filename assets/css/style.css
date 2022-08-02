@@ -6,6 +6,7 @@ body {
     background-size: cover;
     overflow-y: hidden;
 }
+
 .form {
     background-color: rgba(255, 255, 255, 0.61);
     display: table-cell;
@@ -17,6 +18,7 @@ body {
     margin-right: 15%;
     font-family: "Audiowide", sans-serif;
 }
+
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -24,12 +26,15 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
 .jumbotron {
     grid-area: 1 / 1 / 2 / 7;
 }
+
 .form {
     grid-area: 3 / 3 / 4 / 5;
 }
+
 .card {
     position: relative;
     bottom: 700px;
@@ -37,21 +42,26 @@ body {
     background-color: white;
     color: grey;
 }
+
 .jumbotron {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.40);
     font-size: 27px;
 }
+
 .jumbotron p {
     font-size: 22px;
     font-weight: bold;
 }
+
 #venueBtn {
     font-size: 95%;
 }
+
 #cityBtn {
     font-size: 97%;
 }
+
 #concert1 h4,
 #concert2 h4,
 #concert3 h4,
@@ -61,41 +71,48 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
+
 #forecast h4 {
     text-align: center;
     color: blue;
     font-weight: bold;
     text-decoration: underline;
 }
+
 .card-section {
     color: black;
     font-size: 20px;
     font-weight: bold;
 }
+
+.forecast {
+    position: relative;
+    left: 285px;
+    width: 200px;
+    margin: 45px;
+}
+
+
+
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .form {
         width: 100%;
     }
 }
+
 /* Medium and up */
 @media screen and (min-width: 40em) {
     .form {
         width: 100%;
     }
 }
+
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
 /* Large and up */
 @media screen and (min-width: 64em) {}
+
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
-
-
-
-
-
-
-
-
-
