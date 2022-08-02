@@ -74,46 +74,16 @@ $cityBtn.on("click", function (event) {
     // Removes form and re-enables scroll bar
     $(".form").remove();
     $("body").css("overflow-y", "visible");
-
-    // appends first day venues data to first card
-  $("#concert1").append("<h4>Title:</h4>");
-  $("#concert1").append(response.events[0].title,);
-  $("#concert1").append("<h4>Start Time:</h4>");
-  $("#concert1").append(response.events[0].datetime_local);
-  $("#concert1").append("<h4>Venue:</h4>");
-  $("#concert1").append(response.events[0].venue.name_v2);
-
-  // appends second day venues data to second card
-  $("#concert2").append("<h4>Title:</h4>");
-  $("#concert2").append(response.events[1].title,);
-  $("#concert2").append("<h4>Start Time:</h4>");
-  $("#concert2").append(response.events[1].datetime_local);
-  $("#concert2").append("<h4>Venue:</h4>");
-  $("#concert2").append(response.events[1].venue.name_v2);
-
-  // appends third day venues data to third card
-  $("#concert3").append("<h4>Title:</h4>");
-  $("#concert3").append(response.events[2].title,);
-  $("#concert3").append("<h4>Start Time:</h4>");
-  $("#concert3").append(response.events[2].datetime_local);
-  $("#concert3").append("<h4>Venue:</h4>");
-  $("#concert3").append(response.events[2].venue.name_v2);
-
-  // appends fourth day venues data to fourth card
-  $("#concert4").append("<h4>Title:</h4>");
-  $("#concert4").append(response.events[3].title,);
-  $("#concert4").append("<h4>Start Time:</h4>");
-  $("#concert4").append(response.events[3].datetime_local);
-  $("#concert4").append("<h4>Venue:</h4>");
-  $("#concert4").append(response.events[3].venue.name_v2);
-
-  // append fifth day of venues data to fifth card
-  $("#concert5").append("<h4>Title:</h4>");
-  $("#concert5").append(response.events[4].title,);
-  $("#concert5").append("<h4>Start Time:</h4>");
-  $("#concert5").append(response.events[4].datetime_local);
-  $("#concert5").append("<h4>Venue:</h4>");
-  $("#concert5").append(response.events[4].venue.name_v2);
+    for (var i = 0; i<response.events.length; i++){
+      const currentConcertEl = `#concert${i+1}`;
+      const currentEvent = response.events[i];
+      $(currentConcertEl).append("<h4>Title:</h4>");
+      $(currentConcertEl).append(currentEvent.title,);
+      $(currentConcertEl).append("<h4>Start Time:</h4>");
+      $(currentConcertEl).append(currentEvent.datetime_local);
+      $(currentConcertEl).append("<h4>Venue:</h4>");
+      $(currentConcertEl).append(currentEvent.venue.name_v2);
+    }
   });
 });
 
